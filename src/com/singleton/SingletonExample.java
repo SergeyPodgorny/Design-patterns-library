@@ -1,5 +1,7 @@
 package com.singleton;
 
+import com.exceptions.SingletonOverrideException;
+
 public class SingletonExample {
 	
 	
@@ -31,11 +33,13 @@ public class SingletonExample {
 	public static SingletonExample getInstance(char someLetter) {
 		
 		if (INSTANCE == null) {
-			return new SingletonExample(someLetter);
-		} 		
+			INSTANCE =  new SingletonExample(someLetter);
+			return INSTANCE;
+		} 	else {
+			throw new SingletonOverrideException("Somebody tried to override the Singleton object");
+		}
+			
 		
-		
-		return INSTANCE;
 	}
 	
 	

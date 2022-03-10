@@ -7,13 +7,11 @@ public class Library {
 	public static void main(String[] args) {
 		
 		
-		SingletonExample.getInstance('a');
+				
+		System.out.println(SingletonExample.getInstance('a').getClass());
 		
-		SingletonExample.getInstance('b');
+		System.out.println(SingletonExample.getInstance('b').getClass());
 		
-		
-		
-
 	}
 
 }
