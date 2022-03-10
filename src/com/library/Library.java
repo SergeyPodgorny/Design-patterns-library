@@ -1,9 +1,18 @@
 package com.library;
 
+import com.singleton.SingletonExample;
+
 public class Library {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		
+		SingletonExample.getInstance('a');
+		
+		SingletonExample.getInstance('b');
+		
+		
+		
 
 	}
 
