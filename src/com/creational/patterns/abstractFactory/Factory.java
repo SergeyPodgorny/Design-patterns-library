@@ -1,5 +1,7 @@
 package com.creational.patterns.abstractFactory;
 
+import com.exceptions.NullAnimalInFactory;
+
 public class Factory {
 
 	
@@ -15,7 +17,13 @@ public class Factory {
 			return new Dog();
 						
 		} else if(animalType == "Cat") {
+			
 			return new Cat();
+			
+		} else if(animalType == null){
+			
+			throw new NullAnimalInFactory("Somebody just put null into animal factory!");
+			
 		} else {
 			
 			return null;
