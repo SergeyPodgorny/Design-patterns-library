@@ -1,6 +1,6 @@
 package com.creational.patterns.abstractFactory;
 
-import com.exceptions.NullAnimalInFactoryException;
+
 
 public class Factory {
 
@@ -8,35 +8,22 @@ public class Factory {
 	public Animal createInstance(String animalType) {
 		
 			
-		if(animalType == "Cow") {
+		if(animalType.equalsIgnoreCase("Cow")) {
 			
 			return new Cow();
 		
-		} else if(animalType == "Dog") {
+		} else if(animalType.equalsIgnoreCase("Dog")) {
 			
 			return new Dog();
 						
-		} else if(animalType == "Cat") {
+		} else if(animalType.equalsIgnoreCase("Cat")) {
 			
 			return new Cat();
 			
-		} else if(animalType == null){
-			
-			throw new NullAnimalInFactoryException("Somebody just put null into animal factory!");
-			
 		} else {
-			
+						
 			return null;
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-	
 		
 		
 		
