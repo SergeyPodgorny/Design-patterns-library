@@ -1,6 +1,6 @@
 package com.creational.patterns.abstractFactory;
 
-import com.exceptions.NullAnimalInFactory;
+import com.exceptions.NullAnimalInFactoryException;
 
 public class FactoryStartUp {
 
@@ -17,8 +17,10 @@ public class FactoryStartUp {
 			factory.createInstance("Dog").action();
 			
 			factory.createInstance("Cow").action();
-		} catch (NullAnimalInFactory e) {
+		} catch (NullAnimalInFactoryException e) {
+			
 			System.out.println(e.getMessage());
+			
 		} 
 		
 
