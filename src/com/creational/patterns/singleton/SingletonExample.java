@@ -1,4 +1,4 @@
-package com.singleton;
+package com.creational.patterns.singleton;
 
 import com.exceptions.SingletonOverrideException;
 

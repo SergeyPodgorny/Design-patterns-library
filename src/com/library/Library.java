@@ -1,6 +1,6 @@
 package com.library;
 
-import com.singleton.SingletonExample;
+import com.creational.patterns.singleton.SingletonExample;
 
 public class Library {
 
