@@ -1,4 +1,4 @@
-package com.creational.patterns.abstractFactory;
+package com.creational.patterns.FactoryMethod;
 
 public class Cat implements Animal {
 
