@@ -7,8 +7,7 @@ public class Cat implements Animal{
 		return "Cat";
 	}
 
-	@Override
-	public void action() {
+	{
 		System.out.println("Meow!");
 	}
 	

@@ -7,11 +7,10 @@ public class Dog implements Animal{
 		return "Dog";
 	}
 	
-
-	@Override
-	public void action() {
+	{
 		System.out.println("Bark!");
 	}
+	
 	
 	
 }
