@@ -3,10 +3,15 @@ package com.creational.patterns.AbstractFactory;
 public class AnimalFactory implements AbstractFactory {
 	
 	
+	private String type;
 	
 	
 	
-	
+	public AnimalFactory(String type) {
+		this.type = type;
+	}
+
+
 	@Override
 	public Animal create(String type) {
 		if(type.equalsIgnoreCase("Cow")) {

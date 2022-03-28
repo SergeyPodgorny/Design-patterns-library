@@ -10,7 +10,7 @@ public class FactoryProvider implements AbstractFactory {
 		this.type = type;
 	}
 
-	AnimalFactory animalFactory = new AnimalFactory();
+	
 	
 	
 
@@ -21,15 +21,19 @@ public class FactoryProvider implements AbstractFactory {
 		
 		if (type.equalsIgnoreCase("Cat")) {
 			
-			animalFactory.create("Cat");
+			return new AnimalFactory("Cat").create("Cat");
 			
 		} else if (type.equalsIgnoreCase("Dog")) {
-			animalFactory.create("Dog");
+			
+			return new AnimalFactory("Dog").create("Dog");
 			
 		} else if (type.equalsIgnoreCase("Cow")) {
-			animalFactory.create("Cow");
 			
-		} throw new AnimalNotFoundException("");
+			return new AnimalFactory("Cow").create("Cow");
+			
+		} else {
+			throw new AnimalNotFoundException("Animal not found");
+		}
 		
 	}
 	
