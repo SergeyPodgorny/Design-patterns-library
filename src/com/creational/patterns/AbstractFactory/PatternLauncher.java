@@ -8,7 +8,7 @@ public class PatternLauncher {
 		
 		FactoryProvider factory = new FactoryProvider("cat");
 		
-		factory.create(null);
+		factory.create();
 		
 	}
 	

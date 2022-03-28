@@ -13,7 +13,7 @@ public class AnimalFactory implements AbstractFactory {
 
 
 	@Override
-	public Animal create(String type) {
+	public Animal create() {
 		if(type.equalsIgnoreCase("Cow")) {
 			return new Cow();
 		} else if(type.equalsIgnoreCase("Cat")){

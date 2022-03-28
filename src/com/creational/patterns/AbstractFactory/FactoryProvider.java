@@ -15,21 +15,21 @@ public class FactoryProvider implements AbstractFactory {
 	
 
 	@Override
-	public Object create(String type) {
+	public Object create() {
 		
 		
 		
 		if (type.equalsIgnoreCase("Cat")) {
 			
-			return new AnimalFactory("Cat").create("Cat");
+			return new AnimalFactory("Cat").create();
 			
 		} else if (type.equalsIgnoreCase("Dog")) {
 			
-			return new AnimalFactory("Dog").create("Dog");
+			return new AnimalFactory("Dog").create();
 			
 		} else if (type.equalsIgnoreCase("Cow")) {
 			
-			return new AnimalFactory("Cow").create("Cow");
+			return new AnimalFactory("Cow").create();
 			
 		} else {
 			throw new AnimalNotFoundException("Animal not found");
