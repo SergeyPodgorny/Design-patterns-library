@@ -11,9 +11,8 @@ package com.creational.patterns.AbstractFactory;
 public class Trout implements Fish{
 
 	
-	@Override
-	public String getType() {
-		return "Trout";
+	{
+		System.out.println("I am a fish called Trout, I can swim");
 	}
 	
 	

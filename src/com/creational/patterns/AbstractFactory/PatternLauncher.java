@@ -6,9 +6,16 @@ public class PatternLauncher {
 	public static void main(String[] args) {
 		
 		
-		FactoryProvider factory = new FactoryProvider("cat");
+		new FactoryProvider("trout").create();
 		
-		factory.create();
+		new FactoryProvider("cat").create();
+		
+		new FactoryProvider("octopus").create();
+		
+		
+		
+		
+		
 		
 	}
 	

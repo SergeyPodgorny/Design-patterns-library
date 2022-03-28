@@ -16,8 +16,7 @@ public class FactoryProvider implements AbstractFactory {
 
 	@Override
 	public Object create() {
-		
-		
+	
 		
 		if (type.equalsIgnoreCase("Cat")) {
 			
@@ -30,10 +29,29 @@ public class FactoryProvider implements AbstractFactory {
 		} else if (type.equalsIgnoreCase("Cow")) {
 			
 			return new AnimalFactory("Cow").create();
+		} 
+		
+		
+		
+			else if (type.equalsIgnoreCase("Thunnus")) {
 			
+			return new FishFactory("Thunnus").create();
+		
+		} 	else if (type.equalsIgnoreCase("Trout")) {
+			
+			return new FishFactory("Trout").create();
+		
+		
+		
+		
 		} else {
-			throw new AnimalNotFoundException("Animal not found");
+			throw new LivingThingNotFoundException("Requested living thing not found");
 		}
+		
+		
+		
+		
+		
 		
 	}
 	

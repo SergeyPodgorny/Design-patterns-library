@@ -20,9 +20,7 @@ public class AnimalFactory implements AbstractFactory {
 			return new Cat();
 		} else if(type.equalsIgnoreCase("Dog")){
 			return new Dog();
-		} 
-		
-		else {
+		} else {
 			throw new AnimalNotFoundException("Animal not found");
 		}
 	}
