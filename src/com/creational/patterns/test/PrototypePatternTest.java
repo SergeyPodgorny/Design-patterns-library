@@ -22,7 +22,7 @@ public class PrototypePatternTest {
 		
 		ObjectSilo.loadLocalSilo();
 		
-		Dog dog1 = new Dog("1");
+		Animal dog1 = new Dog("1");
 				
 		ObjectSilo.cloneAnimal("1");
 		
@@ -31,7 +31,7 @@ public class PrototypePatternTest {
 		
 		// testing cat
 		
-		Cat cat1 = new Cat("2");
+		Animal cat1 = new Cat("2");
 		
 		ObjectSilo.cloneAnimal("2");
 		
@@ -40,7 +40,7 @@ public class PrototypePatternTest {
 		
 		//testing cow
 		
-		Cow cow1 = new Cow("3");
+		Animal cow1 = new Cow("3");
 		
 		ObjectSilo.cloneAnimal("3");
 		
