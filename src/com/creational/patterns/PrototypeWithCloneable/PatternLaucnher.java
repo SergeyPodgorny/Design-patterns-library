@@ -1,4 +1,4 @@
-package com.creational.patterns.Prototype;
+package com.creational.patterns.PrototypeWithCloneable;
 
 public class PatternLaucnher {
 	

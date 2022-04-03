@@ -4,11 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.creational.patterns.Prototype.Animal;
-import com.creational.patterns.Prototype.Cat;
-import com.creational.patterns.Prototype.Cow;
-import com.creational.patterns.Prototype.Dog;
-import com.creational.patterns.Prototype.ObjectSilo;
+import com.creational.patterns.PrototypeWithCloneable.Animal;
+import com.creational.patterns.PrototypeWithCloneable.Cat;
+import com.creational.patterns.PrototypeWithCloneable.Cow;
+import com.creational.patterns.PrototypeWithCloneable.Dog;
+import com.creational.patterns.PrototypeWithCloneable.ObjectSilo;
 
 public class PrototypePatternTest {
 	

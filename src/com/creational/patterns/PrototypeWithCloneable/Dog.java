@@ -1,23 +1,22 @@
-package com.creational.patterns.Prototype;
+package com.creational.patterns.PrototypeWithCloneable;
 
 import java.util.Objects;
 
-public class Cat extends Animal implements Cloneable{
+public class Dog extends Animal implements Cloneable{
 
 	private String animalId;
 
 	
-	public Cat(String animalId) {
+	public Dog(String animalId) {
 		this.animalId = animalId;
 	}
 
-	
-	
+		
 	@Override
 	public void action() {
-		System.out.println("Meow!");
+		System.out.println("Bark");
 	}
-
+	
 	public String getAnimalId() {
 		return animalId;
 	}
@@ -27,12 +26,10 @@ public class Cat extends Animal implements Cloneable{
 	}
 
 
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(animalId);
 	}
-
 
 
 	@Override
@@ -43,14 +40,9 @@ public class Cat extends Animal implements Cloneable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Cat other = (Cat) obj;
+		Dog other = (Dog) obj;
 		return Objects.equals(animalId, other.animalId);
 	}
 	
 	
-	
-	
-
-	
-
 }
