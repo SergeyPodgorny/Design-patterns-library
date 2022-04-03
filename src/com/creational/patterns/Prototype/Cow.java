@@ -2,45 +2,18 @@ package com.creational.patterns.Prototype;
 
 public class Cow implements Animal {
 
-	public String name;
+	private String animalId;
 	
-	public String ownerName;
-	
-	public int age;
-	
-	public String animalId;
 
-	public Cow(String name, String ownerName, int age, String animalId) {
-		this.name = name;
-		this.ownerName = ownerName;
-		this.age = age;
+	public Cow(String animalId) {
 		this.animalId = animalId;
 	}
 
-	public String getName() {
-		return name;
+	@Override
+	public void action() {
+		System.out.println("Moo!");
 	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getOwnerName() {
-		return ownerName;
-	}
-
-	public void setOwnerName(String ownerName) {
-		this.ownerName = ownerName;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
+	
 	public String getAnimalId() {
 		return animalId;
 	}
@@ -48,6 +21,5 @@ public class Cow implements Animal {
 	public void setAnimalId(String animalId) {
 		this.animalId = animalId;
 	}
-
 
 }
