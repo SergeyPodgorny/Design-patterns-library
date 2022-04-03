@@ -1,6 +1,6 @@
 package com.creational.patterns.Prototype;
 
-public class Cow implements Animal {
+public class Cow extends Animal {
 
 	private String animalId;
 	
@@ -12,19 +12,6 @@ public class Cow implements Animal {
 	@Override
 	public void action() {
 		System.out.println("Moo!");
-	}
-	
-	@Override
-	public Animal clone() {
-		
-		Animal clone = null;
-		
-		try {
-			clone =(Animal) super.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
-		return clone;
 	}
 	
 	

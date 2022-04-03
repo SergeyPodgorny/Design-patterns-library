@@ -1,6 +1,6 @@
 package com.creational.patterns.Prototype;
 
-public class Cat implements Animal {
+public class Cat extends Animal {
 
 	private String animalId;
 
@@ -9,20 +9,6 @@ public class Cat implements Animal {
 		this.animalId = animalId;
 	}
 
-	
-	@Override
-	public Animal clone() {
-		
-		Animal clone = null;
-		
-		try {
-			clone =(Animal) super.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
-		return clone;
-		
-	}
 	
 	
 	@Override
