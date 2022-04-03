@@ -4,6 +4,19 @@ public class PatternLaucnher {
 	
 	
 	
+	public static void main (String[] args) {
+		
+		
+		
+		
+	
+		
+		
+	}
+	
+	
+	
+	
 	
 	
 	
