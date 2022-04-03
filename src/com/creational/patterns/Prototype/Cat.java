@@ -1,6 +1,6 @@
 package com.creational.patterns.Prototype;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Cloneable{
 
 	private String animalId;
 

@@ -28,7 +28,7 @@ public class ObjectSilo {
 		
 		Animal animal = silo.get(id);
 		
-		return animal;
+		return animal.clone();
 		
 	}
 	
