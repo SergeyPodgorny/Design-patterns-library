@@ -5,8 +5,6 @@ public class Dog extends Animal implements Cloneable{
 	private String animalId;
 
 	
-	
-	
 	public Dog(String animalId) {
 		this.animalId = animalId;
 	}
