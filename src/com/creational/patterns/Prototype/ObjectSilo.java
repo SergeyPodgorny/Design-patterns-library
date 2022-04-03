@@ -24,11 +24,11 @@ public class ObjectSilo {
 		
 	}
 	
-	public static Animal getAnimal(String id) {
+	public static Animal cloneAnimal(String id) {
 		
 		Animal animal = silo.get(id);
 		
-		return (Animal) animal.clone();
+		return animal.clone();
 		
 	}
 	

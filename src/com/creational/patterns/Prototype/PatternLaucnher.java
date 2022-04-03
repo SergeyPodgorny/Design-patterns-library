@@ -8,7 +8,7 @@ public class PatternLaucnher {
 		
 		ObjectSilo.loadLocalSilo();
 		
-		ObjectSilo.getAnimal("1").action();
+		ObjectSilo.cloneAnimal("1").action();
 		
 		
 	
