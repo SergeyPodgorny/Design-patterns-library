@@ -1,17 +1,20 @@
 package com.creational.patterns.Prototype;
 
-public class Cat extends Animal {
+public class Cat implements Animal {
 
-public String name;
+	public String name;
 	
 	public String ownerName;
 	
 	public int age;
 
-	public Cat(String name, String ownerName, int age) {
+	public String animalId;
+
+	public Cat(String name, String ownerName, int age, String animalId) {
 		this.name = name;
 		this.ownerName = ownerName;
 		this.age = age;
+		this.animalId = animalId;
 	}
 
 	public String getName() {
@@ -37,5 +40,19 @@ public String name;
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+	public String getAnimalId() {
+		return animalId;
+	}
+
+	public void setAnimalId(String animalId) {
+		this.animalId = animalId;
+	}
+	
+	
+	
+	
+
+	
 
 }
