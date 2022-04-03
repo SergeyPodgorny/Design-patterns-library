@@ -7,13 +7,8 @@ public class ObjectSilo {
 	
 	private static HashMap<String, Animal> silo = new HashMap<>();
 	
-	
-	
-	
-	
-	
-	
-	public void loadLocalSilo() {
+		
+	public static void loadLocalSilo() {
 		
 		Dog dog1 = new Dog("1");
 		
@@ -27,10 +22,15 @@ public class ObjectSilo {
 		
 		silo.put(cow1.getAnimalId(), cow1);
 		
-		
 	}
 	
-	
+	public static Animal getAnimal(String id) {
+		
+		Animal animal = silo.get(id);
+		
+		return (Animal) animal
+		
+	}
 	
 	
 	

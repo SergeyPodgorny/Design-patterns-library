@@ -11,6 +11,24 @@ public class Dog implements Animal {
 		this.animalId = animalId;
 	}
 
+	
+	@Override
+	public Animal clone() {
+		
+		Animal clone = null;
+		
+		try {
+			clone =(Animal) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return clone;
+		
+	}
+	
+	
+	
+	
 	@Override
 	public void action() {
 		System.out.println("Bark");

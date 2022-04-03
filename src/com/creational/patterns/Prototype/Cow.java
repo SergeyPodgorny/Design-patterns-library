@@ -14,6 +14,20 @@ public class Cow implements Animal {
 		System.out.println("Moo!");
 	}
 	
+	@Override
+	public Animal clone() {
+		
+		Animal clone = null;
+		
+		try {
+			clone =(Animal) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return clone;
+	}
+	
+	
 	public String getAnimalId() {
 		return animalId;
 	}
