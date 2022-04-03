@@ -11,8 +11,6 @@ public class PatternLaucnher {
 		ObjectSilo.cloneAnimal("1").action();
 		
 		
-	
-		
 		
 	}
 	
