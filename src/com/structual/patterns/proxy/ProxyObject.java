@@ -4,13 +4,22 @@ public class ProxyObject implements Proxy {
 
 	
 	
+	private RealObject realObject;
 	
-	
-	
-	
+	private String message;
+		
+	public ProxyObject(String message) {
+		this.message = message;
+	}
+
+
 	@Override
 	public void writeToConsole() {
-		System.out.println();
+		if (realObject ==null) {
+			realObject = new RealObject(message);
+		}
+	
+	realObject.writeToConsole();
 	}
 	
 	

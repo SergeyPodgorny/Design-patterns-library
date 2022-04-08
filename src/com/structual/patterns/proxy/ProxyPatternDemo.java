@@ -6,7 +6,15 @@ public class ProxyPatternDemo {
 		
 		
 		
+		ProxyObject someObject = new ProxyObject("a message from proxy"); 
+		
+		
+		someObject.writeToConsole();
 
+		System.out.println(" ");
+		
+		someObject.writeToConsole();
+		
 	}
 
 }
