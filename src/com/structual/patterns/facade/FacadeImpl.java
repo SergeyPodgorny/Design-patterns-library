@@ -17,16 +17,16 @@ public class FacadeImpl {
 		
 	}
 	
-	public void dogAction() {
-		dog.animalAction();
+	public Facade dogAction() {
+		return dog;
 	}
 	
-	public void catAction() {
-		cat.animalAction();
+	public Facade catAction() {
+		return cat;
 	}
 	
-	public void cowAction() {
-		cow.animalAction();
+	public Facade cowAction() {
+		return cow;
 	}
 	
 	

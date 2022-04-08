@@ -9,11 +9,11 @@ public class FacadePatternDemo {
 		FacadeImpl impl = new FacadeImpl();
 		
 		
-		impl.catAction();
+		impl.catAction().animalAction();
 		
-		impl.cowAction();
+		impl.cowAction().animalAction();
 		
-		impl.dogAction();
+		impl.dogAction().animalAction();
 		
 	}
 	
