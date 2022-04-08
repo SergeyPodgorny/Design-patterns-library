@@ -3,8 +3,15 @@ package com.structual.patterns.proxy;
 public class ProxyObject implements Proxy {
 
 	
-	@Override
 	
+	
+	
+	
+	
+	@Override
+	public void writeToConsole() {
+		System.out.println();
+	}
 	
 	
 	
