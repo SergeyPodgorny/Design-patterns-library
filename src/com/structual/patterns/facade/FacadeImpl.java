@@ -17,7 +17,17 @@ public class FacadeImpl {
 		
 	}
 	
+	public void dogAction() {
+		dog.animalAction();
+	}
 	
+	public void catAction() {
+		cat.animalAction();
+	}
+	
+	public void cowAction() {
+		cow.animalAction();
+	}
 	
 	
 
