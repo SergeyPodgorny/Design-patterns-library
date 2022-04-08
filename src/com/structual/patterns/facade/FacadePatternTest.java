@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
@@ -32,9 +33,28 @@ public class FacadePatternTest {
 	
 	@Before
 	void setUpStreams() {
-		
+		System.setOut(new PrintStream(outContent));
 	}
 	
+	@After
+	void restoreStreams() {
+		System.setOut(out);
+	}
+	
+	
+	@Test
+	
+	void checkWhatDogPrints() {
+		
+		FacadeImpl impl = new FacadeImpl();
+		
+		impl.dogAction().animalAction();
+		
+		assertEquals("Bark!", outContent.toString());
+		
+		
+		
+	}
 	
 
 }
