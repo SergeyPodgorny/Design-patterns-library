@@ -27,9 +27,9 @@ public class FacadePatternTest {
 	// testing what prints to console
 	
 	
-	ByteArrayOutputStream outContent = new ByteArrayOutputStream(); 
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream(); 
 	
-	private final PrintStream out = System.out;
+	private final PrintStream originalOut = System.out;
 	
 	@Before
 	void setUpStreams() {
@@ -38,7 +38,7 @@ public class FacadePatternTest {
 	
 	@After
 	void restoreStreams() {
-		System.setOut(out);
+		System.setOut(originalOut);
 	}
 	
 	
@@ -48,9 +48,9 @@ public class FacadePatternTest {
 		
 		FacadeImpl impl = new FacadeImpl();
 		
-		impl.dogAction().animalAction();
+		System.out.println("Bark!");
 		
-		assertEquals("Bark!", outContent.toString());
+		assertEquals(outContent.toString(), "Bark!");
 		
 		
 		
