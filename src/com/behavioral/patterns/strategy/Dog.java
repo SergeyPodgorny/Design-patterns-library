@@ -9,6 +9,7 @@ public class Dog {
 		this.animalAction = animalAction;
 	}
 
+	
 	public AnimalAction getAnimalAction() {
 		return animalAction;
 	}
@@ -19,9 +20,9 @@ public class Dog {
 	
 	
 	
-	{
-		animalAction.action();
-	}
+
+
+	
 	
 	
 }

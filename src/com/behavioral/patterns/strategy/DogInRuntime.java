@@ -7,14 +7,23 @@ public class DogInRuntime {
 		
 		
 		AnimalAction bark = () -> {
-			 
+			
+				System.out.println("Bark!");
 			
 			
-			};
-				
-		new Dog(bark);
-		
-		
+		};
+			
+		new Dog(bark).getAnimalAction().action();
+			
+			
+			
+		AnimalAction woof = () -> {
+			System.out.println("Woof!");
+		};
+			
+	
+		new Dog(woof).getAnimalAction().action();
+	
 		
 		
 		
