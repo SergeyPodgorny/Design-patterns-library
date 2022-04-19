@@ -1,4 +1,4 @@
-package com.creational.patterns.test;
+package com.creational.patterns.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
