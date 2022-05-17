@@ -1,6 +1,6 @@
 package com.library;
 
-import com.creational.patterns.singleton.SingletonExample;
+import com.creational.patterns.singleton.Singleton;
 
 public class Library {
 
@@ -8,9 +8,9 @@ public class Library {
 		
 		
 				
-		System.out.println(SingletonExample.getInstance('a').getClass());
+		System.out.println(Singleton.getInstance('a').getClass());
 		
-		System.out.println(SingletonExample.getInstance('b').getClass());
+		System.out.println(Singleton.getInstance('b').getClass());
 		
 	}
 

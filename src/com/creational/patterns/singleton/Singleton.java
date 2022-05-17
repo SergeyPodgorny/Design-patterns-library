@@ -2,10 +2,10 @@ package com.creational.patterns.singleton;
 
 import com.exceptions.SingletonOverrideException;
 
-public class SingletonExample {
+public class Singleton {
 	
 	
-	private static SingletonExample INSTANCE;
+	private static Singleton INSTANCE;
 	
 	
 	
@@ -15,13 +15,13 @@ public class SingletonExample {
 	
 	
 	
-	private SingletonExample() {
+	private Singleton() {
 		
 		
 	}
 	
 	
-	private SingletonExample(char someLetter) {
+	private Singleton(char someLetter) {
 		this.someLetter = someLetter; 
 		
 		System.out.println(someLetter);
@@ -30,10 +30,10 @@ public class SingletonExample {
 	
 	
 	
-	public static SingletonExample getInstance(char someLetter) {
+	public static Singleton getInstance(char someLetter) {
 		
 		if (INSTANCE == null) {
-			INSTANCE =  new SingletonExample(someLetter);
+			INSTANCE =  new Singleton(someLetter);
 			return INSTANCE;
 		} 	else {
 			throw new SingletonOverrideException("Somebody tried to override the Singleton object");
